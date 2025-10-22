@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition</title>
+    <script src="tp08-operation.js" defer></script>
+</head>
+
+<body>
+    <input type="text" name="nombre1" id="nombre1">
+    <label for="operateur">Opérateur</label>
+    <select id="operateur" name="operateur">
+        <option value="+" id="op1">+</option>
+        <option value="-" id="op2">-</option>
+        <option value="*" id="op3">x</option>
+        <option value="/" id="op4">:</option>
+    </select>
+    <input type="text" name="nombre2" id="nombre2">
+
+    <button type="button" onclick="operation()">Additionner</button>
+
+    <div id="error" style="background-color: red;"></div>
+    <span id="resultat"></span>
+</body>
+
+</html>
